@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+
+  <body>
+    <div class="card">
+      <form action="/predict" method="post">
+        <h2>House Price Prediction</h2>
+
+        <label>Crime rate:</label><br>
+        <input type="text" name="CRIM"><br>
+
+        <label>Lots:</label><br>
+        <input type="text" name="ZN"><br>
+
+        <label>Non-retail business:</label><br>
+        <input type="text" name="INDUS"><br>
+
+        <label>Charles River:</label><br>
+        <input type="text" name="CHAS"><br>
+
+        <label>Nitric oxides concentration:</label><br>
+        <input type="text" name="NOX"><br>
+
+        <label>Number of rooms per dwelling:</label><br>
+        <input type="text" name="RM"><br>
+
+        <label>Owner-occupied units:</label><br>
+        <input type="text" name="AGE"><br>
+
+        <label>Distances to five employment centres:</label><br>
+        <input type="text" name="DIS"><br>
+
+        <label>Accessibility to radial highways:</label><br>
+        <input type="text" name="RAD"><br>
+
+        <label>Property-tax rate:</label><br>
+        <input type="text" name="TAX"><br>
+
+        <label>Pupil-teacher ratio by town:</label><br>
+        <input type="text" name="PTRATIO"><br>
+
+        <label>Proportion of blacks by town:</label><br>
+        <input type="text" name="B"><br>
+
+        <label>% lower status of the population:</label><br>
+        <input type="text" name="LSTAT"><br>
+
+        <br>
+        <input type="submit" value="Predict">
+      </form>
+    </div>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+      
+  </body>
+</html>
