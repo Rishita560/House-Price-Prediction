@@ -9,13 +9,21 @@ This is my first Machine Learning project, where I predict house prices using th
 
 📦 house-price-prediction/
 ├── .vscode/                    # VS Code settings (optional)
+
 ├── static/                    # CSS files for styling
+
 ├── templates/                 # HTML templates (Flask)
+
 ├── .gitignore                 # Files to ignore in Git
+
 ├── House Price Prediction.pkl # Saved ML model (Pickle file)
+
 ├── HousePricePrediction.py    # Model training & evaluation code
+
 ├── app.py                     # Flask web app
+
 ├── requirements.txt           # Python dependencies
+
 └── README.md                  # Project documentation
 
 
@@ -24,6 +32,7 @@ This is my first Machine Learning project, where I predict house prices using th
 🔗 Dataset
 
 Source: Boston Housing Data – Kaggle
+
 Link: https://www.kaggle.com/datasets/arunjathari/bostonhousepricedata
 
 
